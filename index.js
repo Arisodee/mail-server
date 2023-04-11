@@ -57,10 +57,10 @@ app.post("/", async(req, res, next) => {
         await mainMail(yourname, youremail, yoursubject, yourmessage);
 
         // res.send("Message was successfuly Sent");
-        res.redirect('http://127.0.0.1:5500/success.html');
+        res.redirect('https://arisodee.github.io/success.html');
     } catch (error) {
         console.log(error);
-        res.redirect('http://127.0.0.1:5500/fail.html');
+        res.redirect('https://arisodee.github.io/fail.html');
         // res.send("Message Could not be Sent");
     }
 });
